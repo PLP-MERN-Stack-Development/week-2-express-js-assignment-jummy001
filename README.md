@@ -60,4 +60,45 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 
 - [Express.js Documentation](https://expressjs.com/)
 - [RESTful API Design Best Practices](https://restfulapi.net/)
-- [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) 
+- [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+
+# Product API
+
+A simple RESTful API for managing products using Express.js.
+
+## 🚀 Setup
+
+1. Clone the repo and open in VS Code
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+
+
+| Method | Endpoint                              | Description          |
+| ------ | ------------------------------------- | -------------------- |
+| GET    | /api/products                         | List all products    |
+| GET    | /api/products/\:id                    | Get product by ID    |
+| POST   | /api/products                         | Create a new product |
+| PUT    | /api/products/\:id                    | Update a product     |
+| DELETE | /api/products/\:id                    | Delete a product     |
+| GET    | /api/products/stats/count-by-category | Get stats            |
+
+
+
+
+POST /api/products
+Headers:
+  x-api-key: mysecretkey
+  Content-Type: application/json
+
+Body:
+{
+  "name": "Microwave",
+  "description": "800W microwave oven",
+  "price": 150,
+  "category": "kitchen",
+  "inStock": true
+}
